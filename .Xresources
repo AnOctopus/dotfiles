@@ -1,0 +1,38 @@
+URxvt*background: #1d2021
+URxvt*foreground: #ffffc8
+
+! Blacks
+URxvt*color0  : #1d2021
+URxvt*color8  : #7c6f64
+
+! Reds
+URxvt*color1  : #9d0006
+URxvt*color9  : #ff3535
+
+! Greens
+URxvt*color2  : #79740e
+URxvt*color10 : #73d62d
+
+! Yellows
+URxvt*color3  : #b57614
+URxvt*color11 : #fade2f
+
+! Blues
+URxvt*color4  : #076678
+URxvt*color12 : #69ada6
+
+! Magentas
+URxvt*color5  : #8f3f71
+URxvt*color13 : #d283b5
+
+! Cyans
+URxvt*color6  : #427b58
+URxvt*color14 : #8ec07c
+
+! Whites
+URxvt*color7  : #a89984
+URxvt*color15 : #ffffc8
+
+URxvt.font : xft:Source Code Pro:size=14
+
+URxvt.saveLines : 10000

@@ -1,0 +1,9 @@
+[user]
+	email = sewalker@cj.com
+	name = Sean Walker
+[core]
+	excludesfile = ~/.gitignore-global
+[credential]
+	helper = cache
+[diff]
+	renameLimit=1000
