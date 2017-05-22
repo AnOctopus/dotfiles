@@ -35,4 +35,4 @@ URxvt*color15 : #ffffc8
 
 URxvt.font : xft:Source Code Pro:size=14
 
-URxvt.saveLines : 10000
+URxvt.saveLines : 100000

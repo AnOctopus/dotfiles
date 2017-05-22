@@ -13,24 +13,20 @@ alias kp="killall palemoon"
 alias kc="killall chromium"
 alias ke="killall emacs"
 
-alias b="bundle"
-alias be="bundle exec"
-
-alias shell1="ssh shell1.vclk.net"
-alias devops="ssh devops101.wl.cj.com"
-
 alias mvn="mvn-color"
-alias mci="mvn -U clean install"
-alias mcist="mvn -U clean install -DskipTests"
+alias mci='mvn clean install -T 1C -Dcleanup.skip=true -Dtablespaces.skip=true -f `upsearch pom.xml`'
+alias mct='mvn clean test -T 1C -Dcleanup.skip=true -Dtablespaces.skip=true -f `upsearch pom.xml`'
+alias mcid="mvn -U clean install deploy"
 alias mdt="mvn dependency:tree"
+alias mvn-update="mvn versions:use-latest-releases"
+alias ensime="mvn ensime:generate"
+
+alias ssh="TERM=xterm-256color ssh"
 
 alias e="emacsclient"
 alias E="SUDO_EDITOR=\"emacsclient -a emacs\" sudoedit"
 alias s="sudo"
 
-alias keys="echo 'Use stty COMMAND KEY to change' && stty -a"
-
-alias gc="gcloud"
 alias ku="kubectl"
 alias d="docker"
 alias dclean="docker rm $(docker ps -aq) && docker rmi $(docker images | grep "<none>" | awk '{print $3}')"

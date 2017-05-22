@@ -20,8 +20,8 @@ antigen bundle zsh-users/zsh-completions src
 antigen bundle command-not-found
 antigen bundle git
 antigen bundle docker
-antigen bundle docker-compose
 antigen bundle mvn
+antigen bundle aws
 
 
 zmodload zsh/terminfo
@@ -58,3 +58,4 @@ antigen apply
 source $HOME/.dotfiles/k8s
 source $HOME/.cjenv
 export STEAM_RUNTIME=0
+xmodmap "$HOME/.xmodmap"

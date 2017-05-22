@@ -23,14 +23,14 @@ bindsym $mod+s exec dmenu_run
 
 # change focus
 bindsym $mod+h focus left
-bindsym $mod+e focus down
-bindsym $mod+n focus up
+bindsym $mod+n focus down
+bindsym $mod+e focus up
 bindsym $mod+i focus right
 
 # move focused window
 bindsym $mod+Shift+H move left
-bindsym $mod+Shift+E move down
-bindsym $mod+Shift+N move up
+bindsym $mod+Shift+N move down
+bindsym $mod+Shift+E move up
 bindsym $mod+Shift+I move right
 
 # split in horizontal orientation

@@ -1,9 +1,11 @@
 [user]
-	email = sewalker@cj.com
-	name = Sean Walker
+	email = amanda@amandawalker.io
+	name = Amanda Walker
 [core]
 	excludesfile = ~/.gitignore-global
 [credential]
 	helper = cache
 [diff]
 	renameLimit=1000
+[includeIf "gitdir:~/cjdev/"]
+	path = ~/.gitconfig-cj
