@@ -1,5 +1,10 @@
 *\.*~
 \#*\#
+*.hprof
+*.iml
 .ensime
 .ensime_cache
-target
+.projectile
+.meghanada
+src-target/
+target/

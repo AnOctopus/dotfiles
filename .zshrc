@@ -7,10 +7,11 @@ setopt prompt_subst
 autoload -U add-zsh-hook
 bindkey -e
 
-zstyle :compinstall filename '/home/sean/.zshrc'
 autoload -Uz compinit bashcompinit
 compinit
 bashcompinit
+
+zstyle ':completion:*' rehash true
 
 source $HOME/antigen/antigen.zsh
 
@@ -22,7 +23,9 @@ antigen bundle git
 antigen bundle docker
 antigen bundle mvn
 antigen bundle aws
-
+antigen bundle kubectl
+antigen bundle kops
+antigen bundle git@github.com:spwhitt/nix-zsh-completions.git
 
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
@@ -55,7 +58,5 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 
 antigen apply
 
-source $HOME/.dotfiles/k8s
-source $HOME/.cjenv
-export STEAM_RUNTIME=0
+source $HOME/.nix-profile/etc/profile.d/nix.sh
 xmodmap "$HOME/.xmodmap"

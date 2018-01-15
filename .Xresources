@@ -33,6 +33,10 @@ URxvt*color14 : #8ec07c
 URxvt*color7  : #a89984
 URxvt*color15 : #ffffc8
 
-URxvt.font : xft:Source Code Pro:size=14
+URxvt.font : xft:Source Code Pro:size=12
 
 URxvt.saveLines : 100000
+
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+URxvt.perl-ext-common: resize-font
