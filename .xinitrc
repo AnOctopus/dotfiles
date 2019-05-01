@@ -34,7 +34,7 @@ export QT_IM_MODULE=ibus
 xset -b
 
 ibus-daemon -drx
-redshift -b .7:.4 &
+redshift -b .9:.6 &
 
 # tap capslock to press escape
 killall xcape

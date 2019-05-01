@@ -8,3 +8,4 @@
 .meghanada
 src-target/
 target/
+/.mypy_cache/
