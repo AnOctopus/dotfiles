@@ -4,8 +4,15 @@
 *.iml
 .ensime
 .ensime_cache
+.hypothesis
 .projectile
+.python-version
 .meghanada
 src-target/
 target/
-/.mypy_cache/
+.mypy_cache/
+.venv
+/log/
+/html-log/
+/pyls.log
+/pyls.log.1

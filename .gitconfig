@@ -3,9 +3,12 @@
 	name = Amanda Walker
 [core]
 	excludesfile = ~/.gitignore-global
+	commentchar = |
 [credential]
 	helper = cache
 [diff]
 	renameLimit=1000
 [includeIf "gitdir:~/cjdev/"]
 	path = ~/.gitconfig-cj
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/

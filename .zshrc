@@ -21,9 +21,7 @@ antigen bundle zsh-users/zsh-completions src
 antigen bundle git
 antigen bundle docker
 antigen bundle aws
-# antigen bundle kubectl
 antigen bundle kops
-antigen bundle git@github.com:spwhitt/nix-zsh-completions.git
 
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
@@ -35,7 +33,7 @@ autoload -U colors && colors
 autoload -U promptinit && promptinit
 
 
-PROMPT='[%n@%m %? %1~]%(!.#.$) '
+PROMPT='[%n %? %1~]%(!.#.$) '
 
 
 [[ $EMACS = t ]] && unsetopt zle
@@ -51,3 +49,6 @@ source $HOME/.aliases.zsh
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 antigen apply
+
+
+source "/home/awalker/.local/share/dephell/_dephell_zsh_autocomplete"

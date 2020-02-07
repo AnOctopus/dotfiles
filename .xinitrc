@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+# xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --setprovideroutputsource nvidia intel
+xrandr --auto
 
 # start some nice programs
 

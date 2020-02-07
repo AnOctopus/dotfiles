@@ -33,7 +33,7 @@ URxvt*color14 : #8ec07c
 URxvt*color7  : #a89984
 URxvt*color15 : #ffffc8
 
-URxvt.font : xft:Source Code Pro:size=16
+URxvt.font : xft:Source Code Pro:size=12
 
 URxvt.saveLines : 100000
 
