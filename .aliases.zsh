@@ -35,9 +35,6 @@ dclean () {
     docker rm $(docker ps -a -q)
 }
 
-alias siris="z sirisSERVER"
-alias baggu="z baggu-shuttle && pipenv shell"
-
 alias dh="dephell"
 alias dhs="dh venv shell"
 alias bump="dh project bump --env release"

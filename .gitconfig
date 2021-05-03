@@ -3,12 +3,12 @@
 	name = Amanda Walker
 [core]
 	excludesfile = ~/.gitignore-global
+    # Change the comment character from '#', which interferes with starting commits with issue numbers in a way that github will pick up
 	commentchar = |
 [credential]
 	helper = cache
 [diff]
-	renameLimit=1000
-[includeIf "gitdir:~/cjdev/"]
-	path = ~/.gitconfig-cj
-[url "ssh://git@github.com/"]
-	insteadOf = https://github.com/
+	renameLimit = 1000
+    algorithm = patience
+[branch]
+	autosetupmerge = always

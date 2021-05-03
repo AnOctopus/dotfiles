@@ -4,6 +4,7 @@ SAVEHIST=100000
 setopt auto_cd extended_glob auto_continue no_beep no_hup
 setopt hist_ignore_all_dups inc_append_history share_history
 setopt prompt_subst
+setopt pipe_fail
 autoload -U add-zsh-hook
 bindkey -e
 
@@ -20,8 +21,6 @@ antigen bundle zsh-users/zsh-completions src
 
 antigen bundle git
 antigen bundle docker
-antigen bundle aws
-antigen bundle kops
 
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
@@ -49,6 +48,3 @@ source $HOME/.aliases.zsh
 antigen bundle zsh-users/zsh-syntax-highlighting
 
 antigen apply
-
-
-source "/home/awalker/.local/share/dephell/_dephell_zsh_autocomplete"

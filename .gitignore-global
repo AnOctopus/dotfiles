@@ -2,6 +2,7 @@
 \#*\#
 *.hprof
 *.iml
+*.egg-info
 .ensime
 .ensime_cache
 .hypothesis
@@ -12,7 +13,7 @@ src-target/
 target/
 .mypy_cache/
 .venv
-/log/
-/html-log/
-/pyls.log
-/pyls.log.1
+/log
+/pyls.log*
+*.key
+*.tgz
