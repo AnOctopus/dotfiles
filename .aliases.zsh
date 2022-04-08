@@ -18,7 +18,8 @@ alias which="which -a"
 alias pgrep="pgrep -ia"
 alias envs="env | sort"
 alias dus="du -d 1 -h -a 2>/dev/null | sort -h"
-alias upgrade="s nix-channel --update && s nix-env -u && pikaur -Syu"
+# alias upgrade="s nix-channel --update && s nix-env -u && pikaur -Syu"
+alias update="pikaur -Syu"
 
 alias e="emacsclient"
 alias E="SUDO_EDITOR=\"emacsclient -a emacs\" sudoedit"
@@ -35,8 +36,5 @@ dclean () {
     docker rm $(docker ps -a -q)
 }
 
-alias dh="dephell"
-alias dhs="dh venv shell"
-alias bump="dh project bump --env release"
-
 alias psh="poetry shell"
+alias pyt="PYTHONPATH=lib pytest -l --disable-warnings lib/tests/"

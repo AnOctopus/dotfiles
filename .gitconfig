@@ -10,5 +10,5 @@
 [diff]
 	renameLimit = 1000
     algorithm = patience
-[branch]
-	autosetupmerge = always
+# [branch]
+# 	autosetupmerge = always
