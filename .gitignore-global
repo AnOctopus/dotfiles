@@ -14,6 +14,8 @@ target/
 .mypy_cache/
 .venv
 /log
+.log/
 /pyls.log*
 *.key
 *.tgz
+__snapshots__/

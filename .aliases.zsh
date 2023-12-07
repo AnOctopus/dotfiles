@@ -36,5 +36,7 @@ dclean () {
     docker rm $(docker ps -a -q)
 }
 
-alias psh="poetry shell"
-alias pyt="PYTHONPATH=lib pytest -l --disable-warnings lib/tests/"
+alias pyt="PYTHONPATH=lib pytest --showlocals --failed-first --disable-warnings lib/tests/"
+alias activate="source .venv/bin/activate"
+alias cvenv='deactivate; rm -r .venv; pyenv exec python -m venv .venv; activate'
+alias debug='python -m debugpy --listen 5678 --wait-for-client --log-to log/ .venv/bin/streamlit run'

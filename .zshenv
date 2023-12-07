@@ -2,7 +2,7 @@ export PIPENV_VENV_IN_PROJECT=1
 export PIPENV_MAX_DEPTH=10
 export PIP_IGNORE_INSTALLED=1
 
-export PATH="$PATH:$HOME/.ghcup/bin:$HOME/.emacs.d/bin:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.pyenv/bin:$HOME/.ghcup/bin:$HOME/.emacs.d/bin:$HOME/.local/bin"
 
 eval "$(fasd --init auto)"
 
